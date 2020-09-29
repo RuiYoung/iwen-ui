@@ -1,6 +1,6 @@
 import { expect } from 'chai'
 import { shallowMount } from '@vue/test-utils'
-import Button from '@/packages/Button/src/button.vue'
+import Button from '../../packages/Button/src/button.vue'
 
 describe('Button.vue', () => { //划分作用域
   // 测试用例
