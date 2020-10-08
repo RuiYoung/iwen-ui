@@ -7,6 +7,24 @@ describe('Button.vue', () => { //划分作用域
   it('1+1是否等于2', ()=> {
     expect(1+1).to.eq(2)
   })
+
+  it("测试button能否正常显示slot中的内容", ()=> {
+    const wrapper = shallowMount(Button, {
+      slots: {
+        default: 'iwen-ui'
+      }
+    })
+    expect(wrapper.text()).to.equal('iwen-ui')
+  })
+
+  it("测试icon传入是否显示正常", ()=> {
+    const wrapper = shallowMount(Button, {
+      propsData: {
+        icon: 'sousuo'
+      }
+    })
+    expect(wrapper.find("use").attributes("href")).to.eq("#icon-sousuo");
+  })
   // it('renders props.msg when passed', () => {
   //   const msg = 'new message'
   //   const wrapper = shallowMount(HelloWorld, {

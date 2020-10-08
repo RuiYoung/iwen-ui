@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "iwen-ui",
   "version": "1.0.0",
   "private": false,
   "scripts": {
@@ -7,9 +7,9 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test": "karma start",
-    "lib": "vue-cli-service build --target lib --name iwen-ui  ./src/packages/index.js"
+    "lib": "vue-cli-service build --target lib --name iwen-ui  ./packages/index.js"
   },
-  "main": "packages/index.js",
+  "main": "./dist/iwen-ui.umd.min.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
