@@ -1,5 +1,11 @@
-examples
-packages
-vue-press
-tests
-public
+examples/
+packages/
+vue-press/
+tests/
+public/
+
+
+# 忽略指定文件
+vue.config.js
+babel.config.js
+*.map

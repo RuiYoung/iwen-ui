@@ -1,6 +1,6 @@
 {
-  "name": "iwen-ui",
-  "version": "1.0.0",
+  "name": "project",
+  "version": "1.0.1",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -12,6 +12,7 @@
   "main": "./dist/iwen-ui.umd.min.js",
   "dependencies": {
     "core-js": "^3.6.5",
+    "iwen-ui-i": "^1.0.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {

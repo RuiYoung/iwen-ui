@@ -1,40 +1,22 @@
 # project
 
-## Project setup
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+```
 
 ## 步骤
 
-#### vue-cli4创建项目（Macha + Chai单元测试）
+#### vue-cli4创建项目
 
 #### 调整目录
 ```
-.
+
 ...
 |-- examples      // 原 src 目录，改成 examples 用作示例展示
 |-- packages      // 新增 packages 用于编写存放组件
 ...
-. 
+
 
 ```
 
@@ -49,7 +31,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
     iconfont
 
-...
 
 #### 搭建测试环境
 (vue test utils)[https://vue-test-utils.vuejs.org/zh/]
@@ -68,7 +49,7 @@ sourcemap-loader karma-spec-reporter karma-webpack mocha karma-chai -D
 karma.conf.js
 
 
-#### vuePress
+#### vuePress文档
 
 ###### 搭建vuePress基本目录
 
@@ -79,3 +60,14 @@ npm i vuepress -D
 npm i element-ui highlight.js node-sass sass-loader core-js@2 -S
 ```
 
+#### 发布到npm
+
+
+```
+// 如果配置了淘宝镜像，先设置回npm镜像：
+npm config set registry http://registry.npmjs.org
+// 然后在终端执行登录命令，输入用户名、密码、邮箱即可登录
+npm login
+// 发布到 npm
+npm publish
+```
