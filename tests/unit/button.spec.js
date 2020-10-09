@@ -16,15 +16,6 @@ describe('Button.vue', () => { //划分作用域
     })
     expect(wrapper.text()).to.equal('iwen-ui')
   })
-
-  it("测试icon传入是否显示正常", ()=> {
-    const wrapper = shallowMount(Button, {
-      propsData: {
-        icon: 'sousuo'
-      }
-    })
-    expect(wrapper.find("use").attributes("href")).to.eq("#icon-sousuo");
-  })
   // it('renders props.msg when passed', () => {
   //   const msg = 'new message'
   //   const wrapper = shallowMount(HelloWorld, {

@@ -25,7 +25,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - src目录更名为examples，导致项目无法运行
 - 新增packages目录，该目录未加入webpack编译
 
-注：cli3 提供一个可选的 vue.config.js 配置文件。如果这个文件存在则他会被自动加载，所有的对项目和webpack的配置，都在这个文件中。
+注：cli4 提供一个可选的 vue.config.js 配置文件。如果这个文件存在则他会被自动加载，所有的对项目和webpack的配置，都在这个文件中。
 
 #### 编写组件
 
@@ -70,4 +70,25 @@ npm config set registry http://registry.npmjs.org
 npm login
 // 发布到 npm
 npm publish
+
+```
+
+###### 使用 nrm 管理registry
+
+```
+npm install -g nrm
+ 
+nrm ls
+* npm ---- https://registry.npmjs.org/
+  cnpm --- http://r.cnpmjs.org/
+  taobao - https://registry.npm.taobao.org/
+  nj ----- https://registry.nodejitsu.com/
+  rednpm - http://registry.mirror.cqupt.edu.cn/
+  npmMirror  https://skimdb.npmjs.com/registry/
+  edunpm - http://registry.enpmjs.org/
+  
+nrm add ynpm http://XXXXXX:4873 # 添加私服的npm镜像地址
+nrm use ynpm # 使用私服的镜像地址
+
+
 ```
